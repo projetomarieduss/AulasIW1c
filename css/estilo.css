@@ -1,18 +1,26 @@
-body { 
-		background-color: #6495ED
-		background-repeat :round ;
-	    width: 80%;	    
-	     margin-right: auto;
-	     margin-left: auto;
+body {  
 
+
+	    background-image: url("../img/maybe.jpg");
+        background-repeat: round;
+        background-color:  white;
+        background-attachment: fixed;
+        background-size: cover;
+        color: white;
+        width: 80%;	   
+        margin-right: auto;
+        margin-left: auto;	
+        font-family:  URW Chancery L, cursive
 
 
 
 	}
 	 h1,h2 { 
-	 	text-align: center;
-	 	color: #008080
-	 	font-weight:bolder ;
+	    
+	 	text-align:center;
+	 	font-weight:bolder
+	 	
+
 	 	
 
 
@@ -21,10 +29,12 @@ body {
 
 	 }
 	 p{
-	 	text-align: center
+	 	
+        text-align: center
 	 	font-weight:bolder;
-	 	font-size: 20px;
+	 	font-size: 22px;
 	 	text-align: justify;
+	 	
 
 	 	 
 	 	
@@ -37,6 +47,7 @@ body {
 	 }
 
 	 h3{ 
+	 
 	 	text-align: center;
 	 	
 	 	
@@ -68,10 +79,26 @@ body {
 
 
 	 }
+
+	 ul,li{
+
+	 	text-align: center;
+	 	font-weight:bolder;
+	 	font-size: 22px;
+	 	text-align: justify;
+	 	font-family:  URW Chancery L, cursive
+
+
+
+
+
+
+
+	 }
 	 a:link {
   color: #fff;
-  background-color: transparent;
-  text-decoration: underline;
+ background-color: transparent;
+ text-decoration: underline;
 }
 
 a:visited {
