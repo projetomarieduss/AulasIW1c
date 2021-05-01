@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Entendendo o Position</title>
+</head>
+
+<style type="text/css">
+	.fixo{
+         position: fixed;
+         top: 0;
+         right: 0;
+         left: 0;
+         z-index: 1030;
+         background-color: rgba(139,69,19,0.8);
+
+
+	}
+	.main{
+         margin-top: 8%;
+
+
+
+
+	}
+	.conteiner{
+       position:relative;
+       background-color: rgba(139,69,19,0.8);
+       width: 100%;
+       height: 1300px;
+       text-align: center;
+}
+body{
+        background-image: url("../img/maybe.jpg");
+        background-repeat: round;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family:  URW Chancery L, cursive;
+        text-align: center;
+ 
+
+}
+ h1,h2{
+ 	color: black;
+    border: 2px solid;
+    text-align: center;
+
+    
+ }
+
+  .topoesquerda{
+  	   position: absolute;
+  	   top:20px;
+  	   left:20px;
+  	   font-size: 21px;
+  	   width: 25%;
+  	   background-color:#8B4513;
+  	   border: 2px solid;
+}
+     .abaixoesquerda{
+     	 position: absolute;
+         bottom: 10px;
+         left:20px;
+         width: 25%;
+         background-color:#8B4513;
+  	     border: 2px solid;
+
+     }
+     .topodireita{
+       position: absolute;
+  	   top:20px;
+  	   right:20px;
+  	   font-size: 21px;
+  	   width: 25%;
+  	   background-color:#8B4513;
+  	   border: 2px solid;
+
+
+     }
+     .abaixodireita{
+     	 position: absolute;
+         bottom: 10px;
+         right:20px;
+         width: 25%;
+         background-color:#8B4513;
+  	     border: 2px solid;
+         font-size: 21px;
+     }
+     .centro{
+     	position: absolute;
+         top:50%;
+         width: 25%;
+         background-color:#8B4513;
+  	     border: 2px solid;
+         font-size: 21px;
+         margin-left:38% ;
+
+     }
+</style>
+
+<header class="fixo">
+	
+	<h1>Testando Posicionamento</h1>
+
+</header>
+
+<body>
+<div class="main">
+	<h2>Teste</h2>
+	   <div class="conteiner">
+	     <div class=" topoesquerda"><p>Topo esquerdo</p></div>	
+         <div class="topodireita"> <p>Topo direito<p></div>
+         <div class="centro"><p> <a href="index.html"> Clique Aqui</a> para voltar a Tela Inicial</p></div>
+         <div class="abaixoesquerda"><p> Lado abaixo esquerdo</p></div>
+         <div class="abaixodireita"><p>Lado abaixo direita</p></div>
+	   </div>
+ 
+
+</div>
+</body>
+</html>
