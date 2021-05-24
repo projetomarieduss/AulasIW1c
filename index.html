@@ -8,21 +8,29 @@
 <link rel="shortcut icon"  href="img/favicon.png">
 <title>Primeiro Site Html</title>
   
- <header>
-    <nav>
-     <p class="center">  DESENVOLVIMENTO PARA INTERNET – HTML E CSS</p>
-    </nav>
+ <header class="fixo" >
+       <img src="img/logo.png" class="imglogo" >
+        <nav class="menu-opçoes" >    
+          <ul class="ajustes">
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="javascript.html#W3schools">W3schools</a></li>
+             <li><a href="#web">WC3</a></li>
+             <li><a href="javascript.html#css">CSS</a></li>
+             <li><a href="#html">HTML</a> </li>
+             <li><a href="posicionamento.html#posi">Posicionamento</a></li>  
+          </ul>
+        </nav>
 </header>
 
-</head>
+ </head>
 
-<body>
+  <body>
 <div class="container">
-  <div>   
+   <div id="html">   
     
-     <h2  style="background-color:#8B4513;">Introdução ao HTML e CSS​</h2>
+     <h2  style="background-color:#8B4513;" class="titulos">Sobre HTML</h2>
   
-     <ul> 
+     <ul class="listastexto"> 
      <li>HTML (Hyper Text Markup Language) é uma Linguagem de Marcação de Hipertexto utilizada para criação de páginas da Web.</li>
      <li> Essa é a linguagem que o seu navegador (Browser) decodifica para exibir as páginas. </li>
 
@@ -32,119 +40,107 @@
      </ul>
  
  
-     <h2 style="background-color:#8B4513;">Breve Histórico da evolução do  HTML</h2>
+     <h2 style="background-color:#8B4513;" class="titulos">Breve Histórico da evolução do  HTML</h2>
   
      <p>Desde a invenção da web em 1992 por Tim Berners-Lee, a HTML evoluiu a cada versão lançada, sendo a versão mais atual a HTML5. (SILVA, 2011, p.21)​</p>
      <figure>
-      <img src="img/evo.png">
+      <img class="imgtexto" src="img/evo.png">
      </figure>
      <p><a href="https://www.infoescola.com/informatica/html/"  target="_blank">CLIQUE AQUI PARA SABER MAIS INFORMAÇÕES SOBRE HTML!</a> </p>
-      <h2 style="border: 2px solid"> Alguns de algumas Cores em HTML </h2>
-  <div>  
-     <style>
-table {
-  font-family:URW Chancery L, cursive;
-  border-collapse: collapse;
-  width: 80%;
-}
+      <h2 style="border: 2px solid" class="titulos"> Alguns de algumas Cores em HTML </h2>
+  </div>  
+    <div>  
+      <style>
+       table {
+        font-family:URW Chancery L, cursive;
+        border-collapse: collapse;
+         width: 80%;
+       }
+ 
+        td, th {
+        border: 4px solid #8B4513;
+        text-align: center;
+        padding: 8px;
+        }
 
-td, th {
-  border: 4px solid #8B4513;
-  text-align: center;
-  padding: 8px;
-}
+         tr:nth-child(even) {
+        background-color:rgba(139,69,19,0.8);
+     }
+        </style>
 
-tr:nth-child(even) {
-  background-color:rgba(139,69,19,0.8);
-}
-</style>
-
-     <table>
-     <tr>
-     <th>   Cor   </th>
-     <th>   Código   hexadecimal   </th>
-     <th>   Demonstração    </th>
-     </tr>
-     <tr>
-     <td> Preto </td>
-     <td> #000000</td>
-     <td><img src="img/img-preta.jpg"></td>
-      </tr>
-     <tr>
-     <td> Roxo</td>
-     <td> #A020F0</td>
-     <td><img src="img/img-roxo.jpg"></td>
-     </tr>
-     <tr>
-     <td>Azul </td>
-     <td>#0000FF </td>
-     <td><img src="img/img-azul.jpg"></td>
-     </tr>
+         <table>
+         <tr>
+         <th>   Cor   </th>
+         <th>   Código   hexadecimal   </th>
+         <th>   Demonstração    </th>
+         </tr>
+         <tr>
+         <td> Preto </td>
+         <td> #000000</td>
+         <td><img src="img/img-preta.jpg"></td>
+         </tr>
+         <tr>
+         <td> Roxo</td>
+         <td> #A020F0</td>
+         <td><img src="img/img-roxo.jpg"></td>
+         </tr>
+         <tr>
+         <td>Azul </td>
+         <td>#0000FF </td>
+         <td><img src="img/img-azul.jpg"></td>
+         </tr>
      
-     <tr>
-     <td> Verde </td>
-     <td> #008000</td>
-     <td><img src="img/img-verde.jpg"></td>
-     </tr>
+         <tr>
+         <td> Verde </td>
+         <td> #008000</td>
+         <td><img src="img/img-verde.jpg"></td>
+         </tr>
      
-     <tr>
-     <td> Amarelo  </td>
-     <td> #FFFF00</td>
-     <td><img src="img/img-ama.jpg"></td>
-     </tr>
+         <tr>
+         <td> Amarelo  </td>
+         <td> #FFFF00</td>
+         <td><img src="img/img-ama.jpg"></td>
+         </tr>
      
-     <tr>
-     <td> Laranja </td>
-     <td>#FFA500 </td>
-     <td><img src="img/img-lara.png"></td>
-      </tr>
-     <tr>
-      <td> Vermelho </td>
-     <td> #FF0000 </td>
-     <td><img src="img/img-ver.png"></td>
-     </tr>
+         <tr>
+         <td> Laranja </td>
+         <td>#FFA500 </td>
+         <td><img src="img/img-lara.png"></td>
+          </tr>
+         <tr>
+         <td> Vermelho </td>
+         <td> #FF0000 </td>
+         <td><img src="img/img-ver.png"></td>
+         </tr>
      
-      <tr>
-     <td> Rosa </td>
-     <td> #FFC0CB </td>
-     <td><img src="img/img-rosa.jpg"></td>
-     </tr>
-     </table>
-  </div>
-
-
-
- <div>      
-   <h2 style="border: 2px solid" >O que é o W3C</h2>
-     <p>O W3C (World Wide Web Consortium), criado em outubro de 1994 por Tim Berners-Lee, é um consórcio internacional formado por empresas, instituições, pesquisadores, desenvolvedores e público em geral. A finalidade desse consórcio é desenvolver a web a seu potencial máximo, criando normas, especificações e padronizações que se aplicam aos mais diversos segmentos e setores da web. (W3C, ONLINE)</p>
-
-     <h3 style="border: 2px solid">A formação da W3C</h3>
-     <p>Durante os próximas anos, o W3C publicou várias especificações (chamadas “recomendações”) incluindo o HTML, o formato  de imagens PNG, e as Folhas de Estilo em Cascata versões 1 e 2.</p>
-      <figure>
-      <img src="img/a formacao da W3C.png" alt="">
-     </figure>
-     <figure>
-     <img src="img/formw3c.png">
-     </figure>
-     <figure>
-     <img src="img/formw3c2.png">
-     </figure>
-     <figure>
-     <img src="formw3c3.png">
-      </figure>
-     <p  class="center"> <a href="javascript.html">Clique Aqui </a> para ter mais informações sobre CSS e W3schools</p>
-  
-     <p  class="center"> <a href="posicionamento.html">Clique Aqui </a> para ter mais informações sobre posicionamento</p>
-  
-     
-     <P class="center"> Conheça a ETEC MCM <a href="https://www.etecmcm.com.br/" target="_blank">CLICANDO AQUI!</a></P>
-
+         <tr>
+         <td> Rosa </td>
+         <td> #FFC0CB </td>
+         <td><img src="img/img-rosa.jpg"></td>
+         </tr>
+         </table>
+    </div>
  </div>
+
+     <div id="web">      
+       
+         <h2 style="border: 2px solid" class="titulos">O que é o W3c </h2> 
+             <p>O W3C (World Wide Web Consortium), criado em outubro de 1994 por Tim Berners-Lee, é um consórcio internacional formado por empresas, instituições, pesquisadores, desenvolvedores e público em geral. A finalidade desse consórcio é desenvolver a web a seu potencial máximo, criando normas, especificações e padronizações que se aplicam aos mais diversos segmentos e setores da web. (W3C, ONLINE)</p>
+
+             <h3 style="border: 2px solid" class="titulos">A formação da W3C</h3>
+             <p>Durante os próximas anos, o W3C publicou várias especificações (chamadas “recomendações”) incluindo o HTML, o formato  de imagens PNG, e as Folhas de Estilo em Cascata versões 1 e 2.</p>
+     </div>
+         
+          
+          <p class="center"> Conheça a ETEC MCM <a href="https://www.etecmcm.com.br/" target="_blank">CLICANDO AQUI!</a></p>
+       
+        
+</div>
 
 
 <footer>
  <p class="center">Rodapé</p>
 </footer>
 
-</body>
+ </body>
 </html>
