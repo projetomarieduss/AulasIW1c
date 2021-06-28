@@ -43,12 +43,14 @@ html{
  #galeria .galeria{
   margin: 4px 4px ;
   text-align: center;
+  position: relative;
 
  }
  .imggaleria{
   width: 80%%;
   border:1px solid #8B4513 ;
   border-radius: 10px;
+  position: relative;
 
  }
  .gale{
@@ -56,6 +58,7 @@ html{
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
   }
 
  .imgsobre{
