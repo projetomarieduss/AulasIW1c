@@ -1,45 +1,9 @@
-@media screen and (max-width: 599px){
 
-  .conteiner{
-       margin-top:65%;
-  }
-}
-
-@media screen and (min-width: 600px){
-
-  .conteiner{
-       margin-top:45%;
-  }
-}
-@media screen and (min-width: 768px){
-
-  .conteiner{
-       margin-top:20%;
-  }
-  
-    header{
-       background-color: rgba(139,69,19);
-       flex-direction: row;
-       position: relative;
-    }
-
-    .menu-opçoes{
-       position: absolute;
-       right: 8%;
-       top: 35%;
-  }
-     .menu-opçoes ul li{
-        display: inline;
-        margin-left: 15px;
-    
-  }
-  
-}
- html{
+html{
     scroll-behavior: smooth;
     }
 
-  body {  
+   body {  
    background-image: url("../img/maybe.jpg");
    background-repeat: round;
    background-color:  white;
@@ -51,22 +15,55 @@
 
  }
  .container{
+   position: relative;
    width: 80%;    
    margin-right: auto;
    margin-left: auto;
-   margin-top:25%;  
-
-
-
-
+   margin-top: 10%;
 
  }
- .titulos{
-
+ #sobre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+ }
+ #sobre .sobre{
+    text-align: center;
+ }
+ #galeria{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 4px 4px ;
+ }
+ 
+ #galeria .galeria{
+  margin: 4px 4px ;
   text-align: center;
-   font-size: 24px;
+
  }
-  
+ .imggaleria{
+  width: 80%%;
+  border:1px solid #8B4513 ;
+  border-radius: 10px;
+
+ }
+ .gale{
+    width: 90%;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+ .imgsobre{
+  width: 20%;
+  height: 20%;
+ }
+
+
  header, footer{
    background-color: rgba(139,69,19);
    padding: 1%;
@@ -76,21 +73,45 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-    font-size: 21px;
-    line-height: 1.0;
+   font-size: 21px;
+   line-height: 1.0;
 
 
  }
+     .menu-opçoes{
+       position: absolute;
+       right: 7%;
+       top: 50%;
+       text-align: center;
+  }
+     .menu-opçoes ul li{
+        display: inline;
+        margin-left: 15px;
+    
+  }
+  .fixo{
+   position: fixed;
+   top:0;
+   right: 0;
+   left: 0;
+   z-index: 1030;
 
-  h1,h2,h3 { 
-      
-   text-align:center;
-   font-weight:bolder;
-   margin-top: 3%;
-   margin-bottom: 3%;
-   font-size: 24px;
 
-   
+
+ }
+  .ajustes{
+    line-height:1 ;
+    text-align: center;
+  }
+
+
+  nav{
+    width:100%,
+    center;
+    font-weight:bolder;
+    font-size: 22px;
+    text-align: justify;
+ 
  }
    p{
     
@@ -103,14 +124,39 @@
   
  }
 
+
+ 
+  h1,h2 { 
+      
+   text-align:center;
+   font-weight:bolder;
+   margin-top: 3%;
+   margin-bottom: 3%;
+   font-size: 24px;
+
+   
+ }
+ h3{
+   margin-top: 3%;
+   margin-bottom: 3%;
+   font-size: 24px;
+   text-decoration: underline;
+
+ }
+
+ .titulos{
+
+  text-align: center;
+   font-size: 24px;
+ }
+  
+ 
    .center{
     color: #fff;
     text-align: center;
 
  }
 
-
-   
   
    figure {
 
@@ -123,19 +169,8 @@
    width: 50%;
    text-align: center;
 
-
-
-
-
-
  }
- .imglogo{
-   width: 15%;
 
-
-
-
- }
  #web{
     width: 80%;    
     text-align: center; 
@@ -144,11 +179,7 @@
     text-align: justify;
     margin-right: auto;
     margin-left: auto; 
-   
-
-    
-     
-
+ 
  }
  .W3schools{
     width: 80%;    
@@ -171,16 +202,7 @@
     margin-left: auto;  
 
  }
- .fixo{
-   position: fixed;
-   top:0;
-   right: 0;
-   left: 0;
-   z-index: 1030;
-
-
-
- }
+ 
   .listastexto{
     
     color:#fff;
@@ -189,17 +211,8 @@
     margin-bottom: 1%;
     font-size: 21px;
 
-
-
   }
 
-  .ajustes{
-    line-height: 1;
-    text-align: center;
-  }
-  .menu-opçoes{
-    text-align: center;
-  }
 
   ul li { text-align: center;
     font-weight:bolder;
@@ -211,18 +224,6 @@
 
 
  }
-  nav{
-    width:100%,
-    center;
-    font-weight:bolder;
-    font-size: 22px;
-    text-align: justify;
- 
- }
-  
-
- 
-  
   table{
    text-align: center;  
    width: 80%;
@@ -235,6 +236,47 @@
 
 
  }
+ .fundo{
+      background-color: rgba(139,69,19,0.8);
+      text-align: center;
+      font-weight:bolder;
+      font-size: 21px;
+      text-align: justify;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      width: 88%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5%;
+
+ }
+ input[ type=text] , select {
+  width: 80%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border:1px solid #8B4513;
+  border-radius: 8px;
+
+ }
+ input[ type=submit] , select{
+  width: 90%;
+  background-color:#8B4513 ;
+  color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:1px solid #8B4513 ;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-weight:bolder;
+  font-size: 19px;
+ 
+  margin-top: 2%;
+  margin-bottom: 2%;
+ }
+
+ 
    a:link {
   color: #D2B48C;
  background-color: transparent;
@@ -263,3 +305,68 @@
     scroll-behavior: smooth;
 
  }
+ @media screen and (max-width: 599px){
+
+  .conteiner{
+       margin-top:65%;
+       
+ } 
+}
+@media screen and (min-width: 600px){
+
+  .conteiner{
+       margin-top:45%;
+      
+ }
+ }
+@media screen and (min-width: 768px){
+
+  .conteiner{
+       margin-top:20%;
+ 
+  }
+ header {
+  align-items: center;
+   font-size: 21px;
+   width:100%;
+   flex-direction: row;
+    display: flex;
+ }
+ 
+
+  #sobre{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 190px;
+
+ }
+
+  #sobre h1, h2 ,h3 , p {
+    width: 100%;
+    text-align: center;
+  }
+  #sobre .sobre {
+    width: 25%;
+    text-align: center;
+
+  }
+   
+   #galeria{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+   }
+  #galeria .galeria{
+    text-align: center;
+    width: 45%;
+  }
+  
+  .gale{
+    width: 90%;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
